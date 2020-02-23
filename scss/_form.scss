@@ -1,0 +1,47 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0.5rem 0.3rem;
+}
+label {
+  font-weight: 600;
+  margin-left: 0.3rem;
+  color: $white-color;
+}
+/* For removing default behaviour in firefox*/
+input:required,
+textarea:required {
+  box-shadow: none;
+}
+input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.6rem;
+  outline: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 0.4rem;
+  &:not(:placeholder-shown) {
+    &:focus {
+      border: 1px solid $teal-color;
+      &:valid {
+        border: 1px solid $green-color;
+      }
+    }
+    &:not(:focus):invalid {
+      border: 1px solid $red-color;
+    }
+  }
+}
+button[type="submit"] {
+  border: none;
+  background: $teal-color;
+  color: #e6e6e6;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+}
