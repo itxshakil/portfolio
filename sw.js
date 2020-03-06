@@ -6,6 +6,7 @@ var urlsToCache = [
   '/assets/images/ediary.png',
   '/assets/images/movie-guru.png',
   '/assets/images/name-game.png',
+  '/assets/images/mi-dukaan.png',
   '/assets/images/todo.png',
 ];
 
