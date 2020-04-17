@@ -3,7 +3,7 @@ var urlsToCache = [
   '/',
   '/css/style.min.css',
   '/assets/images/avatar-2.jpg',
-  '/assets/images/ediary.png',
+  '/assets/images/appediary.png',
   '/assets/images/movie-guru.png',
   '/assets/images/name-game.png',
   '/assets/images/mi-dukaan.png',
