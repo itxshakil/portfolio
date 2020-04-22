@@ -1,7 +1,8 @@
 var CACHE_NAME = 'my-site-cache-v2';
 var urlsToCache = [
   '/',
-  '/css/style.min.css',
+  '/index.html',
+  '/sw.js',
   '/assets/images/avatar-2.jpg',
   '/assets/images/appediary.png',
   '/assets/images/movie-guru.png',
