@@ -55,7 +55,6 @@ nav {
     display: flex;
     justify-content: space-evenly;
     a {
-      text-decoration: none;
       color: #b5ae9f;
       padding: 0rem 0.5rem;
       &:hover {
@@ -66,42 +65,38 @@ nav {
 }
 section {
   background-color: $home-color;
-  padding-top: 80px;
+  padding-top: 5rem;
   min-height: 80vh;
   @include tablet {
-    padding-top: 50px;
+    padding-top: 3.125rem;
   }
 }
 /* Home */
 section#home {
-  padding-top: 0px;
+  padding-top: 0;
   min-height: 100vh;
   @include flex-center-column;
   background-color: $home-color;
   color: saturate($color: invert($color: $home-color), $amount: 20%);
-  .home-inner {
-    @include flex-center-column;
-    h2 {
-      font-size: 1.7rem;
-      font-weight: 400;
-      overflow: hidden; /* Ensures the content is not revealed until the animation */
-      border-right: 0.1em solid #333; /* The typwriter cursor */
-      white-space: nowrap; /* Keeps the content on a single line */
-      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-      letter-spacing: 0.15em; /* Adjust as needed */
-      animation: typing 3.5s steps(40, end),
-        blink-caret 0.75s step-end infinite;
-      @include tablet {
-        font-size: 3rem;
-      }
+  h2 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.1em solid #333; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.15em; /* Adjust as needed */
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    @include tablet {
+      font-size: 3rem;
     }
-    p {
-      @include tablet {
-        font-size: 1.8rem;
-      }
-      letter-spacing: 0.2rem;
-      word-spacing: 0.1rem;
+  }
+  p {
+    @include tablet {
+      font-size: 1.8rem;
     }
+    letter-spacing: 0.2rem;
+    word-spacing: 0.1rem;
   }
 }
 
@@ -110,7 +105,7 @@ section#about {
   .content {
     padding: 1rem;
     border: 1px dashed $white-color;
-    @include tablet{
+    @include tablet {
       padding: 2rem;
     }
     img.avatar {
@@ -118,7 +113,7 @@ section#about {
       width: 300px;
       @include tablet {
         float: left;
-        border-radius:50%;
+        border-radius: 50%;
       }
       border-radius: 50% 35% 20% 15%;
       shape-outside: circle(50%);
@@ -148,24 +143,19 @@ section#about {
 }
 
 .social-icons {
-  list-style: none;
   padding: 0.3rem;
-  display: flex;
-  justify-content: center;
-  li {
+  @include flex-center;
+  a {
+    @include flex-center;
     @include box(30px);
+    color: $home-color;
     border-radius: 50%;
     background: $white-color;
     margin: 0 0.3rem;
-    @include flex-center;
-    a {
-      color: $home-color;
-      text-decoration: none;
-    }
-    img {
-      width: 20px;
-      height: 20px;
-    }
+  }
+  img {
+    width: 20px;
+    height: 20px;
   }
 }
 /* Projetcs */
@@ -209,10 +199,8 @@ section#about {
         background: #1a1a1a;
         padding: 0.4rem 0.5rem;
         margin-top: -4px;
-        a {
-          color: #b5ae9f;
-          text-decoration: none;
-        }
+        display: block;
+        color: #b5ae9f;
       }
       .info {
         padding: 0.4rem 0.5rem;

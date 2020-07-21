@@ -1,8 +1,7 @@
-.form-group {
+form {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  margin: 0.5rem 0.3rem;
 }
 label {
   font-weight: 600;
@@ -23,7 +22,8 @@ textarea {
   font-size: 1.2rem;
   border-radius: 5px;
   border: 1px solid #ccc;
-  margin-top: 0.4rem;
+  margin: 0.3rem;
+  margin-bottom: 1rem;
   &:not(:placeholder-shown) {
     &:focus {
       border: 1px solid $teal-color;
