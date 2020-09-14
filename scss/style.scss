@@ -75,7 +75,7 @@ section#home {
   min-height: 100vh;
   @include flex-center-column;
   background-color: $home-color;
-  color: saturate($color: invert($color: $home-color), $amount: 20%);
+  color: #f1d1b1;
   h2 {
     font-size: 1.7rem;
     font-weight: 400;

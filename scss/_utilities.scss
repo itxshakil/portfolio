@@ -1,23 +1,23 @@
-
 .container {
-    width: 80%;
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-  
-.accent-color{
-  color:$accent-color;
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.accent-color {
+  color: $accent-color;
+  text-shadow: 2px 2px 3px;
 }
 
 .btn {
-    display: inline-block;
-    padding: 0.6rem 1.2rem;
-    text-decoration: none;
-    color: currentColor;
-    border: 1px solid currentColor;
-    margin: 0.3rem;
-  }
-  .btn:hover {
-    background: #b5ae9f;
-    color: #49484a;
-  }
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  color: currentColor;
+  border: 1px solid currentColor;
+  margin: 0.3rem;
+}
+.btn:hover {
+  background: #b5ae9f;
+  color: $home-color;
+}
