@@ -78,7 +78,7 @@ section#home {
   background-color: $home-color;
   color: #f1d1b1;
   h2 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 400;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: 0.1em solid #333; /* The typwriter cursor */
@@ -110,6 +110,7 @@ section#about {
     img.avatar {
       height: 300px;
       width: 280px;
+      max-width:100%;
       @include tablet {
         float: left;
       }
@@ -183,7 +184,8 @@ section#about {
       box-shadow: 11px 11px 32px #2e3338, -11px -11px 32px #727f8c;
 
       img {
-        width: 343px;
+        width:100%;
+        max-width: 343px;
         height: 225px;
         max-height: 250px;
       }
