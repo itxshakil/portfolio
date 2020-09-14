@@ -110,21 +110,14 @@ section#about {
     }
     img.avatar {
       height: 300px;
-      width: 300px;
+      width: 280px;
       @include tablet {
         float: left;
-        border-radius: 50%;
       }
-      border-radius: 50% 35% 20% 15%;
-      shape-outside: circle(50%);
-      padding: 1rem;
-      border: 1rem solid $blue-color;
-      margin-right: 0.3rem;
-      box-shadow: 6px 6px 16px #2e3338, -11px -11px 32px #727f8c;
+      shape-outside: url("../assets/images/avatar_tie.png");
     }
     p {
       color: $white-color;
-      padding-left: 1rem;
       font-size: 1.2rem;
       margin-bottom: 0.5rem;
       span.hidden {
