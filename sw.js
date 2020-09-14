@@ -1,4 +1,4 @@
-var CACHE_NAME = 'my-site-cache-v2';
+var CACHE_NAME = 'my-site-cache-v3';
 var urlsToCache = [
   '/',
   '/index.html',
@@ -6,7 +6,7 @@ var urlsToCache = [
   '/assets/images/avatar-2.jpg',
   '/assets/images/appediary.png',
   '/assets/images/movie-guru.png',
-  '/assets/images/name-game.png',
+  '/assets/images/laralib.png',
   '/assets/images/mi-dukaan.png',
   '/assets/images/theimp.png',
   '/assets/images/todo.png',
