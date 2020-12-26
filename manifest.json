@@ -1,6 +1,6 @@
 {
-  "short_name": "Shakil Porfolio",
-  "name": "Shakil Alam's Portfolio",
+  "short_name": "Shakil Web Services",
+  "name": "Shakil Web Services",
   "icons": [
     {
       "src": "/assets/images/icons-192.png",
@@ -19,4 +19,3 @@
   "display": "standalone",
   "theme_color": "#505962"
 }
-
