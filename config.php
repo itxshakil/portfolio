@@ -10,4 +10,5 @@ return array(
     'dbusername' => 'root',
     'dbpassword' => '',
     'dbname' => 'portfolio',
+    'secret' => 'secret',
 );
