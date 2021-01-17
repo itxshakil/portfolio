@@ -1,6 +1,13 @@
 {
-  "short_name": "Shakil Web Services",
   "name": "Shakil Web Services",
+  "short_name": "ShakilWebServices",
+  "description": "Portfolio of Shakil Alam (web developer).",
+  "display": "standalone",
+  "lang": "en-US",
+  "background_color": "#505962",
+  "theme_color": "#505962",
+  "start_url": "/index.html?pwa",
+  "scope": "/",
   "icons": [
     {
       "src": "/assets/images/icons-192.png",
@@ -12,10 +19,5 @@
       "type": "image/png",
       "sizes": "512x512"
     }
-  ],
-  "lang" : "en-US",
-  "start_url": "/index.html",
-  "background_color": "#26A69A",
-  "display": "standalone",
-  "theme_color": "#505962"
+  ]
 }
