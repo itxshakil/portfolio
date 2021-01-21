@@ -7,7 +7,7 @@
     <meta name="description"
         content="I am a web developer currently living in Faridabad. My interests range from technology to programming. I am also interested in web development, movies, and reading." />
     <meta name="keywords"
-        content="portfolio, php developer, laravel,developer,library management, Ecommerce , todo App , task , todo offline , todo pwa, shakil alam ,todo appp , javascript project" />
+        content="portfolio, php developer, laravel,developer,library management, Ecommerce , todo App , task , todo offline , todo pwa, shakil alam ,todo app , javascript project" />
     <meta name="subject" content="Shakil Web Services" />
     <meta name="language" content="en" />
     <meta name="rating" content="General" />
@@ -21,36 +21,42 @@
     <meta name="og:url" content="https://shakiltech.com/" />
     <meta name="og:site_name" content="Shakil Web Services" />
     <meta name="og:description"
-        content="I am a web developer currently living in Faridabad. My interests range from technology to programming. I am also interested in web development, movies, and reading." />
+        content="I am a web developer currently living in Faridabad. My favorite stack is Laravel PHP, VueJS and MySQL. My interests range from technology to reading books." />
     <meta name="og:email" content="itxshakil@gamil.com" />
     <meta name="og:phone_number" content="+918076688419" />
     <meta name="og:country-name" content="India" />
     <meta name="theme-color" content="gray" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="gray" />
-    <meta name="apple-mobile-web-app-title" content="Shakil Web Services" />
-    <meta name="msapplication-TitleImage" content="/assets/images/icons-192.png" />
-    <meta name="msapplication-TitleColor" content="gray" />
-    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon" />
-    <link rel="manifest" href="/manifest.json">
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="gray" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="Shakil Web Services" name="apple-mobile-web-app-title"/>
+    <meta content="/assets/images/icons-192.png" name="msapplication-TitleImage"/>
+    <meta content="gray" name="msapplication-TitleColor"/>
+    <link href="/assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Hire Shakil Web Services </title>
+    <script src="js/main.js" defer></script>
     <script>
-        if(location.origin === 'https://shakil.netlify.app'){
-            let head =  document.querySelector('head');
+        if (location.origin === 'https://shakil.netlify.app') {
+            let head = document.querySelector('head');
             head.innerHTML += '<meta http-equiv="refresh" content="0;URL=https://shakiltech.com">'
         }
     </script>
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-5ZWRZ58');</script>
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MKCPBDN');</script>
     <!-- End Google Tag Manager -->
 </head>
 
@@ -83,7 +89,7 @@
                     </div>
                     <div class="card" role="row">
                         <img src="/assets/images/laralib.png" alt="Project Preview Images" loading="lazy">
-                        <a href="https://laralib.herokuapp.com" title="Visit Demo" title="Visit Demo" target="_blank"
+                        <a href="https://laralib.herokuapp.com" title="Visit Demo" target="_blank"
                             class="link">https://laralib.herokuapp.com</a>
                         <p class="info" title="Small Description of Project">A Library Management System with Admin and
                             User Authentication system, where you
@@ -208,7 +214,7 @@
                             class="fa fas fa-envelope" aria-label="Email Icon"></a>
 
                         <a href="https://github.com/itxshakil" class="fa fas fa-github" aria-label="Github Icon"
-                            title="See my recent projetc Source Code"></a>
+                            title="See my recent project Source Code"></a>
 
                         <a href="https://twitter.com/itxshakil" class="fa fas fa-twitter" aria-label="Twitter Icon"
                             title="My personal twitter account"></a>
@@ -224,16 +230,16 @@
     <section id="contact">
         <div class="container" role="group">
             <h3 class="section-heading">Contact Me!</h3>
-            <form method="POST" name="contact-form" data-netlify="true">
-                <input type="hidden" name="form-name" value="contact-form" />
+            <form enctype="multipart/form-data" id="contact-form" method="POST">
+                <input name="form-name" type="hidden" value="contact-form"/>
                 <label for="name">Full Name</label>
-                <input type="text" name="name" id="name" placeholder="John Doe" required />
+                <input id="name" name="name" placeholder="John Doe" required type="text"/>
                 <label for="email">Email Address</label>
-                <input type="email" name="email" id="email" placeholder="johndoe@example.com" required />
+                <input id="email" name="email" placeholder="johndoe@example.com" required type="email"/>
                 <label for="message">Message</label>
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message..."
-                    required></textarea>
-                <button type="submit" class="btn">Send </button>
+                          required></textarea>
+                <button class="btn" id="send-btn" type="submit">Send</button>
             </form>
         </div>
     </section>

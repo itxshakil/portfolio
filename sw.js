@@ -1,15 +1,15 @@
-var CACHE_NAME = 'my-site-cache-v4';
-var urlsToCache = [
-  '/',
-  '/index.html',
-  '/sw.js',
-  '/assets/images/avatar-2.jpg',
-  '/assets/images/appediary.png',
-  '/assets/images/movie-guru.png',
-  '/assets/images/laralib.png',
-  '/assets/images/mi-dukaan.png',
-  '/assets/images/theimp.png',
-  '/assets/images/todo.png',
+let CACHE_NAME = 'my-site-cache-v6';
+let urlsToCache = [
+    '/',
+    '/index.html',
+    '/js/main.js',
+    '/assets/images/avatar-2.jpg',
+    '/assets/images/appediary.png',
+    '/assets/images/movie-guru.png',
+    '/assets/images/laralib.png',
+    '/assets/images/mi-dukaan.png',
+    '/assets/images/theimp.png',
+    '/assets/images/todo.png',
 ];
 
 self.addEventListener('install', function (event) {
@@ -38,9 +38,9 @@ self.addEventListener('fetch', function (event) {
           // and because we want the browser to consume the response
           // as well as the cache consuming the response, we need
           // to clone it so we have two streams.
-          var responseToCache = response.clone();
+            let responseToCache = response.clone();
 
-          caches.open(CACHE_NAME)
+            caches.open(CACHE_NAME)
             .then(function (cache) {
               cache.put(event.request, responseToCache);
             });
