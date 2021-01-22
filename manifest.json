@@ -6,8 +6,7 @@
   "lang": "en-US",
   "background_color": "#505962",
   "theme_color": "#505962",
-  "start_url": "/index.html?pwa",
-  "scope": "/",
+  "start_url": "/index.html?source=pwa",
   "icons": [
     {
       "src": "/assets/images/icons-192.png",
