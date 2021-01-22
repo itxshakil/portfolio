@@ -1,95 +1,91 @@
 @mixin box($width, $height: $width) {
-    width: $width;
-    height: $height;
-  }
+  width: $width;
+  height: $height;
+}
 
-  @mixin flex-column {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  @mixin flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  @mixin flex-center-column {
-    @include flex-center;
-    flex-direction: column;
-  }
-  
-  @mixin flex-center-vert {
-    display: flex;
-    align-items: center;
-  }
-  
-  @mixin flex-center-horiz {
-    display: flex;
-    justify-content: center;
-  }
-  
-  @mixin cover-background {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  
-  @mixin tablet {
-    @media only screen and (min-width: $tablet * 1px) {
-      @content;
-    }
-  }
-  
-  @mixin large {
-    @media only screen and (min-width: $large * 1px) {
-      @content;
-    }
-  }
-  
-  @mixin desktop {
-    @media only screen and (min-width: $desktop * 1px) {
-      @content;
-    }
-  }
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
 
-  
-  @mixin fade($type) {
-    @if $type== "hide" {
-      visibility: hidden;
-      opacity: 0;
-      transition: visibility 1s, opacity 1s;
-    } @else if $type== "show" {
-      visibility: visible;
-      opacity: 1;
-      transition: visibility 1s, opacity 1s;
-    }
-  }
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  
-  @mixin skew-background-transition($initial, $hover, $inverted: false) {
-    background: linear-gradient(
-      90deg,
-      $hover 0%,
-      $hover 50%,
-      $initial 50%,
-      $initial 100%
-    );
-    background-repeat: no-repeat;
-    background-size: 200% 100%;
-  
-    background-position: right bottom;
+@mixin flex-center-column {
+  @include flex-center;
+  flex-direction: column;
+}
+
+@mixin flex-center-vert {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-center-horiz {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin cover-background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin tablet {
+  @media only screen and (min-width: $tablet * 1px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media only screen and (min-width: $large * 1px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: $desktop * 1px) {
+    @content;
+  }
+}
+
+@mixin fade($type) {
+  @if $type== "hide" {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity 1s;
+  } @else if $type== "show" {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 1s, opacity 1s;
+  }
+}
+
+@mixin skew-background-transition($initial, $hover, $inverted: false) {
+  background: linear-gradient(
+    90deg,
+    $hover 0%,
+    $hover 50%,
+    $initial 50%,
+    $initial 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 200% 100%;
+
+  background-position: right bottom;
+  @if $inverted {
+    background-position: left bottom;
+  }
+  transition: background-position 0.25s ease-out;
+
+  &:hover {
+    background-position: left bottom;
     @if $inverted {
-      background-position: left bottom;
-    }
-    transition: background-position 0.25s ease-out;
-  
-    &:hover {
-      background-position: left bottom;
-      @if $inverted {
-        background-position: right bottom;
-      }
+      background-position: right bottom;
     }
   }
-  
+}
