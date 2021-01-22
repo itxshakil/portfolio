@@ -39,7 +39,7 @@ textarea {
 button[type="submit"] {
   border: none;
   background: $teal-color;
-  color:#f1d1b1;
+  color: #f1d1b1;
   text-transform: uppercase;
   font-size: 1rem;
   border-radius: 6px;
@@ -48,8 +48,8 @@ button[type="submit"] {
 
 .error {
   width: 100%;
-  padding: .3rem .5rem;
-  background: rgba(144,29,20, 0.34);
+  padding: 0.3rem 0.5rem;
+  background: rgba(144, 29, 20, 0.34);
   color: rgba(255, 4, 4, 1);
   font-weight: bold;
   letter-spacing: 1px;
@@ -59,8 +59,8 @@ button[type="submit"] {
 
 .success {
   width: 100%;
-  padding: .3rem .5rem;
-  background: rgba(23, 144, 20, .34);
+  padding: 0.3rem 0.5rem;
+  background: rgba(23, 144, 20, 0.34);
   color: rgb(4, 255, 90);
   font-weight: bold;
   letter-spacing: 1px;
