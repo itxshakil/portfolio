@@ -30,7 +30,8 @@ a {
 }
 /* nav */
 nav {
-  position: sticky;
+  position: fixed;
+  width:100%;
   top: 0;
   display: flex;
   font-weight: 600;
@@ -146,6 +147,9 @@ section#about {
     border-radius: 50%;
     background: $white-color;
     margin: 0 0.3rem;
+    &:hover{
+      color:$accent-color;
+    }
   }
   img {
     width: 20px;
