@@ -31,7 +31,7 @@ a {
 /* nav */
 nav {
   position: fixed;
-  width:100%;
+  width: 100%;
   top: 0;
   display: flex;
   font-weight: 600;
@@ -74,7 +74,7 @@ section {
 /* Home */
 section#home {
   padding-top: 0;
-  min-height: 100vh;
+  min-height: 80vh;
   @include flex-center-column;
   background-color: $home-color;
   color: #f1d1b1;
@@ -112,7 +112,7 @@ section#about {
     img.avatar {
       height: 300px;
       width: 280px;
-      max-width:100%;
+      max-width: 100%;
       @include tablet {
         float: left;
       }
@@ -147,8 +147,8 @@ section#about {
     border-radius: 50%;
     background: $white-color;
     margin: 0 0.3rem;
-    &:hover{
-      color:$accent-color;
+    &:hover {
+      color: $accent-color;
     }
   }
   img {
@@ -189,7 +189,7 @@ section#about {
       box-shadow: 11px 11px 32px #2e3338, -11px -11px 32px #727f8c;
 
       img {
-        width:100%;
+        width: 100%;
         max-width: 343px;
         height: 225px;
         max-height: 250px;
@@ -249,20 +249,9 @@ footer {
 /* The typing effect */
 @keyframes typing {
   from {
-    width: 0;
+    width: 0ch;
   }
   to {
-    width: 100%;
-  }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #333;
+    width: 25ch;
   }
 }
