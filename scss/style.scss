@@ -165,9 +165,6 @@ section#about {
   @include tablet {
     grid-template-columns: repeat(2, 1fr);
   }
-  @include large {
-    grid-template-columns: repeat(3, 1fr);
-  }
   .project {
     .header {
       display: flex;
@@ -190,7 +187,6 @@ section#about {
 
       img {
         width: 100%;
-        max-width: 343px;
         height: 225px;
         max-height: 250px;
       }
