@@ -149,6 +149,8 @@ section#about {
     margin: 0 0.3rem;
     &:hover {
       color: $accent-color;
+      transform:scale(1.1);
+      padding:0 1rem;
     }
   }
   img {
