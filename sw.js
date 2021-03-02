@@ -6,7 +6,7 @@ let urlsToCache = [
   '/assets/images/avatar_tie.webp',
   '/assets/images/appediary.png',
   '/assets/images/movie-guru.webp',
-  '/assets/images/laralib.png',
+  '/assets/images/laralib.webp',
   '/assets/images/mi-dukaan.png',
   '/assets/images/theimp.png',
   '/assets/images/todo.png',
