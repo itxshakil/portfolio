@@ -4,9 +4,8 @@
   margin: 0 auto;
 }
 
-.accent-color {
-  color: $accent-color;
-  text-shadow: 2px 2px 3px;
+.blue-shadow{
+  text-shadow:2px 2px 3px $blue-color;
 }
 
 .btn {
