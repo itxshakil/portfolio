@@ -117,6 +117,9 @@ section#about {
         float: left;
       }
       shape-outside: url("../assets/images/avatar_tie.png");
+      &:hover{
+        filter: drop-shadow(-5px 6px 2px #112453);
+      }
     }
     p {
       color: $white-color;
@@ -147,6 +150,7 @@ section#about {
     border-radius: 50%;
     background: $white-color;
     margin: 0 0.3rem;
+    transition: transform ease-in-out .5s;
     &:hover {
       color: $accent-color;
       transform:scale(1.1);
