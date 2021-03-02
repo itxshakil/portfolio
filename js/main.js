@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
+    loadFontAwesome();
+
     const contactForm = document.querySelector('form#contact-form');
     const contactSendBtn = document.querySelector('form #send-btn');
 
@@ -54,4 +56,13 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log(error);
         })
     })
+
+    function loadFontAwesome() {
+        let linkElement = document.createElement('link');
+        linkElement.href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+        linkElement.rel = "stylesheet";
+
+        let head = document.querySelector('head');
+        head.appendChild(linkElement);
+    }
 })
