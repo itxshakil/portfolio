@@ -116,7 +116,7 @@ section#about {
       @include tablet {
         float: left;
       }
-      shape-outside: url("../assets/images/avatar_tie.png");
+      shape-outside: url("../assets/images/avatar_tie.webp");
       &:hover{
         filter: drop-shadow(-5px 6px 2px #112453);
       }
