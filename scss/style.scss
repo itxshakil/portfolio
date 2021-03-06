@@ -117,7 +117,7 @@ section#about {
         float: left;
       }
       shape-outside: url("../assets/images/avatar_tie.webp");
-      &:hover{
+      &:hover {
         filter: drop-shadow(-5px 6px 2px #112453);
       }
     }
@@ -150,12 +150,11 @@ section#about {
     border-radius: 50%;
     background: $white-color;
     margin: 0 0.3rem;
-    transition: transform ease-in-out .3s;
+    transition: transform ease-in-out 0.3s;
     &:hover {
       color: $accent-color;
-      transform:scale(1.1) translateY(-5px) rotate(360deg);
-      transform:
-      padding:0 1rem;
+      transform: scale(1.1) translateY(-5px) rotate(360deg);
+      padding: 0 1rem;
     }
   }
   img {
@@ -211,7 +210,7 @@ section#about {
         display: flex;
         width: 100%;
         flex-wrap: wrap;
-        padding: 0.2rem 1rem;
+        padding: 1rem;
         gap: 0.5rem;
         justify-content: center;
       }
@@ -226,8 +225,9 @@ section#about {
         font-weight: bold;
         text-align: center;
         letter-spacing: 1px;
-        @include tablet{
-          padding:.3rem 1.5rem;
+        margin: 0.1rem;
+        @include tablet {
+          padding: 0.3rem 1.5rem;
         }
       }
 
