@@ -150,10 +150,11 @@ section#about {
     border-radius: 50%;
     background: $white-color;
     margin: 0 0.3rem;
-    transition: transform ease-in-out .5s;
+    transition: transform ease-in-out .3s;
     &:hover {
       color: $accent-color;
-      transform:scale(1.1);
+      transform:scale(1.1) translateY(-5px) rotate(360deg);
+      transform:
       padding:0 1rem;
     }
   }
