@@ -1,7 +1,8 @@
-let CACHE_NAME = 'my-site-cache-v6';
+let CACHE_NAME = 'my-site-cache-v7';
 let urlsToCache = [
   '/',
   '/index.html',
+  '/index.html?source=pwa',
   '/js/main.js',
   '/assets/images/avatar_tie.webp',
   '/assets/images/appediary.png',
