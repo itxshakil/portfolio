@@ -12,6 +12,7 @@ let urlsToCache = [
   '/assets/images/mi-dukaan.png',
   '/assets/images/theimp.png',
   '/assets/images/todo.png',
+  'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
 ];
 
 self.addEventListener('install', function (event) {
