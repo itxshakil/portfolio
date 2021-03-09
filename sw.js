@@ -2,6 +2,7 @@ let CACHE_NAME = 'my-site-cache-v7';
 let urlsToCache = [
   '/',
   '/index.html',
+  '/app.webmanifest',
   '/index.html?source=pwa',
   '/js/main.js',
   '/assets/images/avatar_tie.webp',
