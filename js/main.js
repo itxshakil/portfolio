@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
         contactSendBtn.disabled = true;
         contactSendBtn.innerText = "Sending...";
 
-        let nameInput = document.querySelector('#name');
-        let emailInput = document.querySelector('#email');
-        let messageInput = document.querySelector('#message');
+        let nameInput = document.getElementById('name');
+        let emailInput = document.getElementById('email');
+        let messageInput = document.getElementById('message');
 
         if (nameInput.value.trim() === '') {
             nameInput.focus();
@@ -30,19 +30,18 @@ document.addEventListener('DOMContentLoaded', () => {
             body: formData
         }).then(response => {
             response.json().then(json => {
-                let formElement = document.createElement('p');
+                let messageParagraph = document.createElement('p');
 
-                formElement.innerText = json.message;
-                formElement.classList.add(json.class);
+                messageParagraph.innerText = json.message;
+                messageParagraph.classList.add(json.class);
 
-                contactForm.prepend(formElement);
+                contactForm.prepend(messageParagraph);
 
                 function resetForm() {
-                    formElement.remove();
+                    messageParagraph.remove();
                     nameInput.value = '';
                     emailInput.value = '';
                     messageInput.value = '';
-
 
                     contactSendBtn.disabled = false;
                     contactSendBtn.innerText = "Send";
