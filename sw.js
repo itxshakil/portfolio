@@ -1,5 +1,5 @@
-let CACHE_NAME = 'my-site-cache-v8';
-let urlsToCache = [
+const CACHE_NAME = 'my-site-cache-v8';
+const urlsToCache = [
   '/',
   '/index.html',
   '/app.webmanifest',
@@ -33,7 +33,7 @@ self.addEventListener('fetch', function (event) {
       return fetch(event.request).then(
         function (response) {
           // Check if we received a valid response
-          if (!response || response.status !== 200 || response.type !== 'basic') {
+          if (!response || response.status !== 200 || response.type !== 'basic' || response.request.method !== 'GET') {
             return response;
           }
 
@@ -41,7 +41,7 @@ self.addEventListener('fetch', function (event) {
           // and because we want the browser to consume the response
           // as well as the cache consuming the response, we need
           // to clone it so we have two streams.
-          let responseToCache = response.clone();
+          const responseToCache = response.clone();
 
           caches.open(CACHE_NAME)
             .then(function (cache) {
