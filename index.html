@@ -143,7 +143,7 @@
     </nav>
     <section id="home">
         <h1>Hello, I am <span class="blue-shadow" wa-role="text">web developer</span></h1>
-        <h2>I create things for web.</h2>
+        <h2>I create custom web app specially developed for your business needs.</h2>
         <a href="#contact" class="btn">Get in touch now!</a>
     </section>
     <section id="projects">
@@ -298,17 +298,14 @@
                             itemprop="nationality">India</span>.I have experience in developing real-time web
                             applications, complex front-end, and back-end management systems.
                     </p>
-                    <p>
                         <span class="hidden">
-                        All my projects are based on PHP8 in conjunction with other modern web technologies.</span>I can create custom web apps specially developed for your business and personal needs. I can also do the SEO, site speed
+                        I'm comfortable working with issue tracking systems such as Trello and additionally has experience working with 3rd party APIs such as Facebook, Google, Twitter, Stripe, PayPal, RazorPay.</span>I can create custom web apps specially developed for your business and personal needs. I can also do the SEO, site speed
                         optimization, search engine submission and Google analytics setup, website maintenance, and related stuff for you.
                     </p>
-                    <p>Oh, and I am an MSc (CS) student and graduated from BCA in December 2020. I am actively looking for new work
-                    opportunities.</p>
+                    <p>Oh, and I am an MSc (CS) student and graduated from BCA in December 2020. I am actively looking for new work opportunities.</p>
                     <br>
                     <div class="social-icons" role="group" aria-label="Social Links">
-                        <a itemprop="url" href="https://github.com/itxshakil" class="fa     fas fa-github"
-                            aria-label="Github Icon" title="See my recent project Source Code"></a>
+                        <a itemprop="url" href="https://github.com/itxshakil" class="fa fas fa-github" aria-label="Github Icon" title="See my recent project Source Code"></a>
                         <a itemprop="url" href="https://twitter.com/itxshakil" class="fa fas fa-twitter"
                             aria-label="Twitter Icon" title="My personal twitter account"></a>
                         <a itemprop="url" href="https://www.youtube.com/channel/UC-WK27NK32ppvghlHMLkYUA"
@@ -324,14 +321,13 @@
         <div class="container" role="group">
             <h3 class="section-heading">Contact Me!</h3>
             <form enctype="multipart/form-data" id="contact-form" method="POST">
-                <input name="form-name" type="hidden" value="contact-form" />
+                <input name="form-name" autocomplete="name" type="hidden" value="contact-form" />
                 <label for="name">Full Name</label>
-                <input id="name" name="name" placeholder="John Doe" required type="text" />
+                <input id="name" name="name" autocomplete="email" placeholder="John Doe" required type="text" />
                 <label for="email">Email Address</label>
                 <input id="email" name="email" placeholder="johndoe@example.com" required type="email" />
                 <label for="message">Message</label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message..."
-                    required></textarea>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message..." required></textarea>
                 <button class="btn" id="send-btn" type="submit">Send Now</button>
             </form>
         </div>
