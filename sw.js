@@ -1,11 +1,11 @@
-const CACHE_NAME = 'my-site-cache-v8';
+const CACHE_NAME = 'my-site-cache-v9';
 const urlsToCache = [
   '/',
   '/index.html',
   '/app.webmanifest',
   '/index.html?source=pwa',
   '/js/main.js',
-  '/assets/images/avatar_tie.webp',
+  '/assets/images/itxshakil.webp',
   '/assets/images/appediary.png',
   '/assets/images/movie-guru.webp',
   '/assets/images/laralib.webp',
