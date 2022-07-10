@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
         contactSendBtn.disabled = true;
         contactSendBtn.innerText = "Sending...";
 
-        let nameInput = document.getElementById('name');
-        let emailInput = document.getElementById('email');
-        let messageInput = document.getElementById('message');
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const messageInput = document.getElementById('message');
 
         if (nameInput.value.trim() === '') {
             nameInput.focus();
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
             messageInput.focus();
         }
 
-        let formData = new FormData();
+        const formData = new FormData();
         formData.append('name', nameInput.value);
         formData.append('message', messageInput.value);
         formData.append('email', emailInput.value);
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
             body: formData
         }).then(response => {
             response.json().then(json => {
-                let messageParagraph = document.createElement('p');
+                const messageParagraph = document.createElement('p');
 
                 messageParagraph.innerText = json.message;
                 messageParagraph.classList.add(json.class);
@@ -47,9 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     contactSendBtn.innerText = "Send";
                 }
 
-                setTimeout(function () {
-                    resetForm();
-                }, 5000);
+                setTimeout(() => resetForm(), 5000);
             })
         }).catch(error => {
             console.log(error);
@@ -57,11 +55,11 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     function loadFontAwesome() {
-        let linkElement = document.createElement('link');
+        const linkElement = document.createElement('link');
         linkElement.href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
         linkElement.rel = "stylesheet";
 
-        let head = document.querySelector('head');
+        const head = document.querySelector('head');
         head.appendChild(linkElement);
     }
 })
