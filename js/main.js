@@ -51,7 +51,9 @@ document.addEventListener('DOMContentLoaded', () => {
             })
         }).catch(error => {
             console.log(error);
-        })
+        });
+        
+        document.getElementById("current-year").innerHTML = new Date().getFullYear();
     })
 
     function loadFontAwesome() {
