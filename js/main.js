@@ -51,9 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
             })
         }).catch(error => {
             console.log(error);
-        });
-        
-        document.getElementById("current-year").innerHTML = new Date().getFullYear();
+        })
     })
 
     function loadFontAwesome() {
@@ -64,4 +62,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const head = document.querySelector('head');
         head.appendChild(linkElement);
     }
+
+    document.getElementById("current-year").innerHTML = new Date().getFullYear();
 })
