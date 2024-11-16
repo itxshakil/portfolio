@@ -1,4 +1,4 @@
-const CACHE_NAME = "my-site-cache-v9.2";
+const CACHE_NAME = "my-site-cache-v9.3";
 const urlsToCache = [
   "/",
   "/index.html",
@@ -12,6 +12,7 @@ const urlsToCache = [
   "/assets/images/mi-dukaan.png",
   "/assets/images/theimp.png",
   "/assets/images/todo.png",
+  "/assets/images/pfx-to-pem-converter.jpg",
   "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css",
 ];
 
