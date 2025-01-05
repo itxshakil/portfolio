@@ -1,4 +1,4 @@
-const CACHE_NAME = "my-site-cache-v9.3";
+const CACHE_NAME = "my-site-cache-v9.4";
 const urlsToCache = [
   "/",
   "/index.html",
@@ -8,6 +8,7 @@ const urlsToCache = [
   "/assets/images/itxshakil.webp",
   "/assets/images/appediary.png",
   "/assets/images/movie-guru.webp",
+  "/assets/images/life_balance_quiz.png",
   "/assets/images/laralib.webp",
   "/assets/images/mi-dukaan.png",
   "/assets/images/theimp.png",
